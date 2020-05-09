@@ -14,7 +14,7 @@
   </head>
   <body>
     <header>
-      <div class="header-content">
+      <div class="header-content desktop-menu">
         <p id="title"><a href="#">Responsive JS Menu</a></p>
         <nav role="navigation">
           <a href="#item1">Item 1</a>
@@ -22,6 +22,35 @@
           <a href="#item3">Item 3</a>
         </nav>
       </div>
+
+      <div class="responsive-menu">
+        <div class="responsive-menu-content">
+          <div>
+            <p id="title"><a href="#">Responsive JS Menu</a></p>
+          </div>
+
+          <div>
+            <img
+              src="./images/toggle.png"
+              alt="toggle-button"
+              id="toggle-button"
+              onclick="dropdownMenu()"
+              class="dropbtn"
+            />
+            <nav
+              role="navigation"
+              id="myDropdown"
+              class="responsive-menu-links"
+            >
+              <a href="#item1">Item 1</a>
+              <a href="#item2">Item 2</a>
+              <a href="#item3">Item 3</a>
+            </nav>
+          </div>
+        </div>
+        <!-- /responsive-menu-content -->
+      </div>
+      <!-- /responsive-menu -->
     </header>
     <!-- /header -->
 
@@ -103,5 +132,7 @@
         >.
       </p>
     </footer>
+
+    <script src="menu.js"></script>
   </body>
 </html>

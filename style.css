@@ -8,6 +8,7 @@
 body {
   font-family: "work sans", sans-serif;
   font-size: 18px;
+  margin-top: 60px;
 }
 
 .container {
@@ -94,4 +95,66 @@ footer {
   line-height: 1.5;
   padding: 0 1em;
   text-align: center;
+}
+
+.responsive-menu {
+  display: none;
+}
+
+.show {
+  display: none;
+}
+
+/* media queries */
+
+@media (max-width: 600px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .responsive-menu {
+    display: block;
+  }
+
+  .responsive-menu-content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 95vw;
+  }
+
+  #toggle-button {
+    display: block;
+  }
+
+  #toggle-button:hover {
+    cursor: pointer;
+  }
+
+  #myDropdown {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    overflow: auto;
+    z-index: 1;
+  }
+
+  .responsive-menu-links a {
+    color: #502e7f;
+    padding: 1.25em;
+  }
+
+  .responsive-menu-links a:hover {
+    color: #ffffff;
+    background: #502e7f;
+  }
+
+  .show {
+    display: flex !important;
+    flex-direction: column;
+    margin-top: 22px;
+    width: 100%;
+    left: 0;
+  }
 }
