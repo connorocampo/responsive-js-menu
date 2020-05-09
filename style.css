@@ -10,6 +10,11 @@ body {
   font-size: 18px;
 }
 
+.container {
+  max-width: 1100px;
+  padding: 120px 1em;
+}
+
 .purple-bg {
   background: #502e7f;
   color: #ffffff;
@@ -23,9 +28,19 @@ body {
 /* main styles */
 
 header {
+  background: white;
+  box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.2);
   height: 60px;
   display: flex;
   justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+header a {
+  text-decoration: none;
 }
 
 .header-content {
@@ -52,11 +67,6 @@ nav a {
 section {
   display: flex;
   justify-content: center;
-}
-
-.container {
-  max-width: 1100px;
-  padding: 120px 1em;
 }
 
 .heading {
