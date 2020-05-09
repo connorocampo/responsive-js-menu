@@ -101,10 +101,6 @@ footer {
   display: none;
 }
 
-.show {
-  display: none;
-}
-
 /* media queries */
 
 @media (max-width: 600px) {
@@ -138,6 +134,10 @@ footer {
     background-color: #f1f1f1;
     overflow: auto;
     z-index: 1;
+  }
+
+  .responsive-menu-links {
+    display: flex;
   }
 
   .responsive-menu-links a {
