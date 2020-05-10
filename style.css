@@ -90,11 +90,15 @@ section {
 footer {
   align-items: center;
   display: flex;
-  height: 100px;
+  flex-direction: column;
   justify-content: center;
   line-height: 1.5;
-  padding: 0 1em;
+  padding: 2em 1em;
   text-align: center;
+}
+
+footer a {
+  color: #502e7f;
 }
 
 .responsive-menu {

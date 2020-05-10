@@ -4,6 +4,7 @@ function dropdownMenu() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
+// close dropdownMenu when clicking anywhere on the screen
 window.onclick = function (event) {
   if (!event.target.matches(".dropbtn")) {
     var dropdowns = document.getElementsByClassName("responsive-menu-links");
