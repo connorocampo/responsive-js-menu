@@ -101,64 +101,37 @@ footer a {
   color: #502e7f;
 }
 
-.responsive-menu {
+#toggle-button {
   display: none;
 }
 
 /* media queries */
 
-@media (max-width: 600px) {
-  .desktop-menu {
-    display: none;
-  }
-
-  .responsive-menu {
-    display: block;
-  }
-
-  .responsive-menu-content {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
-    width: 95vw;
-  }
-
+@media (max-width: 700px) {
   #toggle-button {
     display: block;
   }
 
-  #toggle-button:hover {
-    cursor: pointer;
-  }
-
-  #myDropdown {
+  .nav a {
     display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    overflow: auto;
-    z-index: 1;
   }
 
-  .responsive-menu-links {
-    display: flex;
-  }
-
-  .responsive-menu-links a {
-    color: #502e7f;
-    padding: 1.25em;
-  }
-
-  .responsive-menu-links a:hover {
-    color: #ffffff;
-    background: #502e7f;
-  }
-
-  .show {
-    display: flex !important;
+  .responsive {
     flex-direction: column;
-    margin-top: 22px;
-    width: 100%;
+    position: absolute;
     left: 0;
+    top: 60px;
+    width: 100vw;
+  }
+
+  .responsive a {
+    display: block;
+    background: #fff;
+    border-bottom: 2px solid #502e7f;
+  }
+
+  .responsive a:hover {
+    color: #fff;
+    background: #502e7f;
   }
 }

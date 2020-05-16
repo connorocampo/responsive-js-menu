@@ -1,19 +1,11 @@
-// show and hide dropdown button
+// toggle responsive menu
 
-function dropdownMenu() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
+function toggleNav() {
+  var links = document.getElementById("links");
 
-// close dropdownMenu when clicking anywhere on the screen
-window.onclick = function (event) {
-  if (!event.target.matches(".dropbtn")) {
-    var dropdowns = document.getElementsByClassName("responsive-menu-links");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains("show")) {
-        openDropdown.classList.remove("show");
-      }
-    }
+  if (links.className === "nav") {
+    links.className = "nav" + " responsive";
+  } else {
+    links.className = "nav";
   }
-};
+}
